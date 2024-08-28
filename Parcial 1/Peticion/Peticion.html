@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="pa" type="text">
+    <button id="btn">GetPais</button>
+    <div id="nomPais"></div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click",()=>{
+            let nomPais=document.getElementById("pa").value;
+            console.log(nomPais);
+            let vurl = "https://restcountries.com/v3.1/name/${nomPais}";
+
+
+
+            fetch(vurl)
+            .then(res=>res.json())
+                .then(dato=>{console.log(dato)
+        })
+    })
+    </script>
+</body>
+</html>
