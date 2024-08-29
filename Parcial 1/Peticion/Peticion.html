@@ -1,29 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Petición a una API Pública</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Posts from JSONPlaceholder API</h1>
+        <button id="fetchPosts">Obtener Posts</button>
+        <div id="posts"></div>
+    </div>
 
-    <input id="pa" type="text">
-    <button id="btn">GetPais</button>
-    <div id="nomPais"></div>
-
-    <script>
-        document.getElementById("btn").addEventListener("click",()=>{
-            let nomPais=document.getElementById("pa").value;
-            console.log(nomPais);
-            let vurl = "https://restcountries.com/v3.1/name/${nomPais}";
-
-
-
-            fetch(vurl)
-            .then(res=>res.json())
-                .then(dato=>{console.log(dato)
-        })
-    })
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
