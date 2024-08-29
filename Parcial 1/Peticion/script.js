@@ -1,23 +1,24 @@
-document.getElementById('fetchPosts').addEventListener('click', fetchPosts);
+document.getElementById('fetchImages').addEventListener('click', fetchImages);
 
-function fetchPosts() {
-    fetch('https://jsonplaceholder.typicode.com/posts')
+function fetchImages() {
+    const url = 'https://picsum.photos/v2/list?page=2&limit=9';
+
+    fetch(url)
         .then(response => response.json())
         .then(data => {
-            const postsContainer = document.getElementById('posts');
-            postsContainer.innerHTML = ''; // Limpiar el contenido anterior
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = ''; // Limpiar el contenido anterior
 
-            data.forEach(post => {
-                const postElement = document.createElement('div');
-                postElement.classList.add('post');
+            data.forEach(image => {
+                const imgContainer = document.createElement('div');
+                imgContainer.classList.add('image-container');
 
-                postElement.innerHTML = `
-                    <h2>${post.title}</h2>
-                    <p>${post.body}</p>
+                imgContainer.innerHTML = `
+                    <img src="${image.download_url}" alt="Imagen aleatoria">
                 `;
 
-                postsContainer.appendChild(postElement);
+                gallery.appendChild(imgContainer);
             });
         })
-        .catch(error => console.error('Error al obtener los posts:', error));
+        .catch(error => console.error('Error al obtener las imágenes:', error));
 }
