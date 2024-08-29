@@ -48,4 +48,3 @@ Una API es una interfaz que permite que dos aplicaciones se comuniquen entre sí
 ### Conclusión
 En resumen, una API es una herramienta poderosa que permite que las aplicaciones se comuniquen entre sí de manera efectiva. Facilita la integración de funciones y servicios entre sistemas, mejorando la flexibilidad, escalabilidad y eficiencia de las aplicaciones modernas.
 
-WAYABA
