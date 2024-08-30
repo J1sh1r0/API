@@ -15,12 +15,10 @@
         document.getElementById("btn").addEventListener("click",()=>{
             let nomPais=document.getElementById("pa").value;
             console.log(nomPais);
-            let vurl = "https://restcountries.com/v3.1/name/${nomPais}";
-
-
+            let vurl = "http://localhost:3000/";
 
             fetch(vurl)
-            .then(res=>res.json())
+            .then(res=>res.text())
                 .then(dato=>{console.log(dato)
         })
     })

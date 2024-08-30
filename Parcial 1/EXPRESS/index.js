@@ -1,5 +1,9 @@
 const express = require('express');
 const app = express();
+const  cors  = requerir ('cors') 
+ 
+app.uso(cors())
+
 
 app.get('/',(req,res)=>{
     res.send('Server Express contestando a peticion get')

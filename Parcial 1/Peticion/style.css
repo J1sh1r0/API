@@ -1,0 +1,84 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+ 
+/* Estilos del contenedor principal */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background: linear-gradient(135deg, #ff4b1f, #1fddff);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+ 
+/* Estilo del título */
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+ 
+/* Estilos del botón */
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: #ff4b1f;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 75, 31, 0.5);
+}
+ 
+button:hover {
+    background-color: #1fddff;
+    box-shadow: 0 5px 15px rgba(31, 221, 255, 0.5);
+    transform: scale(1.05);
+}
+ 
+/* Estilos de la galería */
+#gallery {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+ 
+/* Estilos de las imágenes */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+ 
+.image-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+ 
+.image-container:hover img {
+    transform: scale(1.1);
+}
+ 

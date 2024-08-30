@@ -49,6 +49,7 @@
 ## TAREA 29/08/2024
 - Buscar en google el Hello word en espres para mañana
 
+- Todos los documentos html por default estan en el puerto 80.
 
 
 
