@@ -15,7 +15,7 @@
         document.getElementById("btn").addEventListener("click",()=>{
             let nomPais=document.getElementById("pa").value;
             console.log(nomPais);
-            let vurl = "http://localhost:3000/";
+            let vurl = "http://localhost:3000/API";
 
             fetch(vurl)
             .then(res=>res.text())

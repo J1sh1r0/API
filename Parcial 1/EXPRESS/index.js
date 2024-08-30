@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const  cors  = requerir ('cors') 
+//const  cors  = require ('cors');
  
-app.uso(cors())
+//app.use(cors());
 
 
 app.get('/',(req,res)=>{
@@ -14,5 +14,5 @@ app.post('/',(req,res)=>{
 })
 
 app.listen(3000,()=>{
-    console.log('Server Express escuchando en el puerto 3000')
+    console.log('http://localhost:3000')
 })
