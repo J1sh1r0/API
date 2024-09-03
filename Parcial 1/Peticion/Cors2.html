@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form target="resultado" method="GET" action="http://localhost:3000/'">
+        <button id="btnFrom" type="submit">PeticionForm</button>
+        <button id="btnJs" type="button">PeticionJS</button>
+    </form>
+
+    <iframe name="resultado"></iframe>
+
+    <script>
+        document.getElementById("btnJs").addEventListener("click",()=>{
+            let vurl = "http://localhost:3000/API";
+            fetch(vurl)
+                .then(res=>res.text())
+                    .then(dato=> { console.log(dato)
+        })
+    })
+    </script> 
+    
+</body>
+</html>
