@@ -51,7 +51,8 @@
 
 - Todos los documentos html por default estan en el puerto 80.
 
-
+## 04-09-2024
+Mirewer: Son funciones que se ejecutan durante el ciclo de solicitud respuesta
 
 
 ## Posibles preguntas de examen
@@ -61,3 +62,6 @@
 - Que es CORS?
 - Como funciona las peticiones?
 - Los encabezados que manejan cada una
+- Que es una funcion Middlewere?
+- Que va a hacer el Middlewere?
+- Cuales son los tipos de Middlewere?
