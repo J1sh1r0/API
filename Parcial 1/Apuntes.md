@@ -54,6 +54,35 @@
 ## 04-09-2024
 Mirewer: Son funciones que se ejecutan durante el ciclo de solicitud respuesta
 
+## 09-09-2024
+### QUE ES UNA API?
+Es un intermediario para conectar diferentes sistemas, para compartir recursos.  
+Es la capa del software que se expone a otros.  
+### REST
+Define requisitos o restricciones son los que diran como se comportaran la API.  
+### API RESTful
+Cumple con todos las restricciones rest.  
+### Cliente y Servidor
+El cliente y el servidor son independientes.  
+Evolucionan independientemente.
+### Sin Estado
+El servudor no almacena peticiones del cliente.  
+Cada una es independiente.  
+La peticion tiene que tener todo lo necesario.
+### Cache
+La respuesta debe ser cacheable.
+### Interfaz Uniforme
+Usar metodos estandar.
+No se tiene que revolver en las rutas o end point.
+Respuestas estandar.
+### Capas
+Separa el sistema en modulos o capas independientes.  
+
+### Investigar (XML_RPC Y SOAP)
+- Como funciona 
+- Que es quien lo hico 
+- quien lo usa 
+- ejemplo corto
 
 ## Posibles preguntas de examen
 - Que es peticiones seguras o ingeguras?
@@ -65,3 +94,7 @@ Mirewer: Son funciones que se ejecutan durante el ciclo de solicitud respuesta
 - Que es una funcion Middlewere?
 - Que va a hacer el Middlewere?
 - Cuales son los tipos de Middlewere?
+- Que es una api?
+- Que es rest?
+- Que es restful?
+- Posiblemente preguntara 3 de los tipos de restricciones rest.  

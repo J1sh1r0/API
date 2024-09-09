@@ -1,6 +1,12 @@
 ## ¿Qué es una API?
 
-Una API (Application Programming Interface, por sus siglas en inglés) es un conjunto de reglas y protocolos que permite a diferentes aplicaciones comunicarse entre sí.
+Una API (Application Programming Interface, por sus siglas en inglés) es un conjunto de reglas y protocolos que permite a diferentes aplicaciones comunicarse entre sí.  
+Es un intermediario para conectar diferentes sistemas, para compartir recursos.  
+Es la capa del software que se expone a otros.  
+## REST
+Define requisitos o restricciones son los que diran como se comportaran la API.  
+## API RESTful
+Cumple con todos las restricciones rest.  
 
 ### Definición Básica
 Una API es una interfaz que permite que dos aplicaciones se comuniquen entre sí. Actúa como un intermediario que recibe solicitudes de una aplicación, las traduce, las envía a otra aplicación, y luego devuelve la respuesta a la primera aplicación.
