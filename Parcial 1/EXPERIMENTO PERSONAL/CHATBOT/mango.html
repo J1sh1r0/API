@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Selección de Base de Datos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Barra lateral -->
+        <div class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a onclick="showContent('chatbot')">Chatbot</a></li>
+                <li><a onclick="showContent('database-info')">Información de Bases de Datos</a></li>
+                <li><a onclick="showContent('advantages')">Ventajas de las Bases de Datos</a></li>
+                <li><a onclick="showContent('disadvantages')">Desventajas</a></li>
+            </ul>
+        </div>
+
+        <!-- Contenedor del chatbot -->
+        <div class="chat-container" id="chatbot">
+            <div class="chat-box" id="chat-container">
+                <!-- Mensajes del chatbot y del usuario se añadirán aquí -->
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Escribe tu respuesta...">
+                <button onclick="handleUserInput()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secciones de contenido -->
+    <div id="database-info" class="content">
+        <h3>Información de Bases de Datos</h3>
+        <p>Una base de datos es un conjunto de datos organizados de manera que se puedan acceder, gestionar y actualizar fácilmente. Las bases de datos se utilizan para almacenar grandes cantidades de información de manera estructurada, como registros de clientes, transacciones financieras y más.</p>
+    </div>
+
+    <div id="advantages" class="content">
+        <h3>Ventajas de las Bases de Datos</h3>
+        <ul>
+            <li>Mejor administración de datos.</li>
+            <li>Facilita el acceso y la recuperación de información.</li>
+            <li>Permite realizar consultas complejas de manera eficiente.</li>
+            <li>Garantiza la integridad de los datos.</li>
+        </ul>
+    </div>
+
+    <div id="disadvantages" class="content">
+        <h3>Desventajas de las Bases de Datos</h3>
+        <ul>
+            <li>El costo de implementación puede ser alto.</li>
+            <li>La gestión y el mantenimiento requieren conocimientos especializados.</li>
+            <li>Puede haber problemas de seguridad si no se implementan correctamente.</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
