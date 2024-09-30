@@ -19,6 +19,7 @@ app.get('/attachment',cors(),(req,res)=>{ //Adjuntas el archivo de la respuesta
     let archivo=path.join(__dirname, '/Imagenes/Lambo.jpg')
     res.attachment(archivo);
     res.send()
+    res.sendFile()
 })
 
 //download y attachment hacen lo mismo
