@@ -12,3 +12,5 @@ Un arreglo es por que tiene (-).
 ## Preguntas de Examen
 - Como podemos hacer que la API sea amigable.  
 - Aque se refiere a cada punto(tomaste foto de la expo)
+- Que es el JWT: Estandar abierto para generar un token y que garantice que la comunicacion es segura
+- Que es el open ssl?
