@@ -1,14 +1,14 @@
 {
-  "name": "express",
+  "name": "expressycors",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
     "chai": "^4.0.0",
     "chai-http": "^4.4.0",
@@ -16,6 +16,7 @@
     "express": "^4.19.2"
   },
   "devDependencies": {
-    "mocha": "^10.4.0"
+    "jest": "^29.7.0",
+    "mocha": "^10.8.2"
   }
 }

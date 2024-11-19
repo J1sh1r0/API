@@ -1,13 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
-
-const  cors  = require ('cors'); 
-app.use(cors());                //Middleware de Terceros
-
-app.get('/',cors(),(req,res)=>{
-    res.json({mensaje: 'Server Express contestando a peticion get'})
-})
-
-app.listen(3002,()=>{
-    console.log('Server Express Escuchando en puerto 3000')
-})
+ 
+app.use(cors()); // Middleware de terceros
+ 
+app.get('/empleado', (req, res) => {
+    res.json({ mensaje: 'Server Express contestando a petición get' });
+});
+ 
+module.exports = app; // Exporta la instancia de app

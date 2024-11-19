@@ -1,12 +1,13 @@
-const expect = require("supertest");
-const url = "http://localhost:3002";
-
-describe("Conjunto de pruebas ",()=>{ // Encapsular test dentro de la función describe()
- it('Revisar que servidor me de 200', () => { // En la función it() lo que debería hacer
- request(url)
- .get('/empleado')
- .end( function(err,res){
-    expect(res.statusCode).toBe(200);
-        });
+const request = require("supertest");
+const app = require("../index"); // Importa la instancia de la app
+ 
+describe("Conjunto de pruebas", () => {
+    it("Revisar que servidor me de 200", (done) => { // Usa done para manejar la asincronía
+        request(app)
+            .get("/empleado")
+            .end((err, res) => {
+                expect(res.statusCode).toBe(200);
+                done(); // Llama a done al final para indicar que la prueba ha terminado
+            });
     });
- });
+});
