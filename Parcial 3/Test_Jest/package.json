@@ -1,0 +1,16 @@
+{
+  "name": "test_node",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/test"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
