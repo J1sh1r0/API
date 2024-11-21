@@ -13,7 +13,7 @@ const swaggerOptions = {
     version: '1.0.0',
     },
     servers:[
-    { url: "http://localhost:3000" }
+    { url: "http://localhost:3002" }
     ],
     },
     apis: [`${path.join(__dirname,"index.js")}`],
@@ -28,7 +28,7 @@ app.use(cors()); // Middleware de Terceros
 *      description: Consultar todos los empleados
 *      responses:
 *          200:
-*              description: Rregresa un arreglo de objetos con los empleados.
+*              description: Regresa un arreglo de objetos con los empleados.
 */
 app.get('/empleado', (req, res) => {
     res.json({ mensaje: 'Server Express contestando a petición get' });
@@ -36,7 +36,14 @@ app.get('/empleado', (req, res) => {
  
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 app.use("/api-docs",swaggerUI.serve,swaggerUI.setup(swaggerDocs));
+app.get("/api-spec", (req, res) => {
+    res.json(swaggerDocs); // Devuelve la documentación Swagger en formato JSON
+});
+
+//app.get("api-spec",()=>{
+//    res.json(swaggerDocs);
+//})
  
-app.listen(3000, () => {
+app.listen(3002, () => {
     console.log('Server Express escuchando en puerto 3002');
 });
